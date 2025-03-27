@@ -111,7 +111,7 @@ def main():
     canvas = Canvas(root, width=800, height=1200)
     canvas.pack()
 
-    background_image = Image.open("invoicebackground.jpg")
+    background_image = Image.open("invoicebackground.png")
     background_image = background_image.resize((800, 1200), Image.NEAREST)
     background_photo = ImageTk.PhotoImage(background_image)
     canvas.create_image(0, 0, anchor=tk.NW, image=background_photo)
